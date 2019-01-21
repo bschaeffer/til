@@ -3,7 +3,7 @@ defmodule Sort.Merge do
   Merge Sort
 
   This is the sort implementation used by erlang under the hood, as it has the best performance on the average case for
-  sorting linked lists. Implemented the **merge** step instead of using `:lists.merge/2`) so I can actually see how that
+  sorting linked lists. Implemented the **merge** step instead of using `:lists.merge/2` so I can actually see how that
   process works.
   """
   @doc "Sorts a list using the merge sort algorithim"

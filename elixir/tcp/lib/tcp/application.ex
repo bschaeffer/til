@@ -12,7 +12,7 @@ defmodule Tcp.Application do
 
     # Define workers and child supervisors to be supervised
     children = [
-      worker(Tcp.Server, [port, Tcp.Protocol]),
+      worker(Tcp.Server, [port, Tcp.EchoProtocol]),
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html

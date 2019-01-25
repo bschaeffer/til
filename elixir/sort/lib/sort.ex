@@ -10,4 +10,8 @@ defmodule Sort do
   @doc "Sorts a list using `Sort.Merge.sort/1"
   @spec merge(list()) :: list()
   def merge(list), do: Sort.Merge.sort(list)
+
+  @doc "Sorts a list using `Sort.Quick.sort/1"
+  @spec quick(list()) :: list()
+  def quick(list), do: Sort.Merge.sort(list)
 end

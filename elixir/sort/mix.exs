@@ -21,6 +21,7 @@ defmodule Sort.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:benchee, ">= 0.0.0", only: :dev},
       {:stream_data, "~> 0.1", only: :test}
     ]
   end

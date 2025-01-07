@@ -27,10 +27,10 @@ func TestDo(t *testing.T) {
 		assert.NoError(t, err)
 		results[i] = res
 	}
+	assert.WithinDuration(t, time.Now(), start, 300*time.Millisecond)
 
 	assert.Equal(t, len(expected), len(results), "wrong number of results")
 	for i, result := range results {
 		assert.Equal(t, expected[i], result, "wrong result at index %d", i)
 	}
-	assert.WithinDuration(t, time.Now(), start, 300*time.Millisecond)
 }
